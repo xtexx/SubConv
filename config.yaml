@@ -1,0 +1,4 @@
+HOST: 0.0.0.0
+PORT: 8080
+DEFAULT_TEMPLATE: zju
+TEST_URL: https://www.gstatic.com/generate_204
