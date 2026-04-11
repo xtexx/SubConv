@@ -35,7 +35,7 @@ Response JSON fields:
 | availableTemplates | A list of all template names found in the `template/` directory. |
 
 ## GET /robots.txt
-Returns a `robots.txt` response based on the `DISALLOW_ROBOTS` environment variable. When `DISALLOW_ROBOTS=True`, it returns `User-agent: * / Disallow: /`; otherwise it returns 404.
+Returns a `robots.txt` response based on the `DISALLOW_ROBOTS` setting in `config.yaml`. When `DISALLOW_ROBOTS=true`, it returns `User-agent: * / Disallow: /`; otherwise it returns 404.
 
 ## GET /proxy
 This API is used to access the specified URL through this service.

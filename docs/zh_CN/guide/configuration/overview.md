@@ -13,6 +13,7 @@
 - `HOST`：后端绑定地址
 - `PORT`：后端监听端口
 - `DEFAULT_TEMPLATE`：当 `/sub` 或 `/proxy` 不带 `template` 查询参数时使用的模板
+- `DISALLOW_ROBOTS`：是否让 `/robots.txt` 返回 `Disallow: /`（默认值为 `true`）
 
 示例 `config.yaml`：
 
@@ -20,6 +21,7 @@
 HOST: 0.0.0.0
 PORT: 8080
 DEFAULT_TEMPLATE: zju
+DISALLOW_ROBOTS: true
 ```
 
 ## 模板文件项

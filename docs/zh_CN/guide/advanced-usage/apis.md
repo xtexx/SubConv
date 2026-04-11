@@ -34,7 +34,7 @@
 | availableTemplates | `template/` 目录下所有可用模板名称的列表。 |
 
 ## GET /robots.txt
-根据 `DISALLOW_ROBOTS` 环境变量返回 `robots.txt` 响应。当 `DISALLOW_ROBOTS=True` 时，返回 `User-agent: * / Disallow: /`；否则返回 404。
+根据 `config.yaml` 里的 `DISALLOW_ROBOTS` 配置返回 `robots.txt` 响应。当 `DISALLOW_ROBOTS=true` 时，返回 `User-agent: * / Disallow: /`；否则返回 404。
 
 ## GET /proxy
 此API用于通过本服务代理访问指定的URL。

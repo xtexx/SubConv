@@ -13,6 +13,7 @@ If you are running from a source checkout, put your changes in `config.yaml`. If
 - `HOST`: the bind address of the backend process
 - `PORT`: the listening port of the backend process
 - `DEFAULT_TEMPLATE`: the template used when `/sub` or `/proxy` omits the `template` query parameter
+- `DISALLOW_ROBOTS`: whether `/robots.txt` should return `Disallow: /` (defaults to `true`)
 
 Example `config.yaml`:
 
@@ -20,6 +21,7 @@ Example `config.yaml`:
 HOST: 0.0.0.0
 PORT: 8080
 DEFAULT_TEMPLATE: zju
+DISALLOW_ROBOTS: true
 ```
 
 ## Template File Items
