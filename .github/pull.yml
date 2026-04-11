@@ -3,9 +3,7 @@ rules:
   - base: main
     upstream: SubConv:main
     mergeMethod: merge
-    mergeUnstable: false # Optional, merge pull request even when the mergeable_state is not clean. Default: false
-  - base: dev
-    upstream: master # Required. Can be a branch in the same forked repo.
+    mergeUnstable: false
     assignees:
       - xtexx
     reviewers:
